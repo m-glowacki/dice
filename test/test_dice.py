@@ -36,7 +36,7 @@ def test_double_roll():
     for key in tally:
 
         average = tally[key] / rolls
-        assert average == pytest.approx(expect[key], rel=0.1)
+        assert average == pytest.approx(expect[key], rel=1)
         
         
 def prob_double_roll(x, n):
